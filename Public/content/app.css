@@ -1,0 +1,519 @@
+/*Vanessa Victorino - 301201653*/
+
+
+/*COMP229-401 - Assignment #1*/
+
+.container {
+    margin-bottom: 50px;
+}
+
+body {
+    /*background-color: whitesmoke;*/
+    background-image: linear-gradient(to right, darkgoldenrod 0%, saddlebrown 100%);
+    overflow: scroll;
+}
+
+#homeMsg {
+    font-size: 40px;
+    color: #20B2AA;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+#backgroundImage {
+    margin: 0 auto;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    /*no-repeat center fixed;*/
+    width: 100%;
+}
+
+
+/*------------------------------*/
+
+#addBtn {
+    border: solid black 1px;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+#addBtn:hover {
+    background-color: teal;
+}
+
+#submit {
+    border: solid black 2px;
+    background-color: brown;
+}
+
+#updateBtn,
+#deleteBtn {
+    font-size: 12px;
+}
+
+#updateBtn:hover,
+#deleteBtn:hover {
+    background-color: teal;
+}
+
+#loginBtn,
+#submitBtn,
+#cancelBtn {
+    border: solid black 2px;
+}
+
+#submit:hover,
+#loginButton:hover,
+#submitBtn:hover,
+#cancelBtn:hover {
+    border: solid black 2px;
+    background-color: teal;
+}
+
+#contactList {
+    width: 100%;
+}
+
+
+/*about page*/
+
+#highlight {
+    color: hotpink;
+}
+
+.leftSide {
+    padding-left: 12px;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 505px;
+}
+
+.rightSide {
+    display: block;
+    float: right;
+    width: 40%;
+}
+
+.rightSide img {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+/*------------------------*/
+
+
+/*Projects page*/
+
+.alink a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #20B2AA;
+}
+
+.alink:hover {
+    color: purple;
+}
+
+.assignment-links a {
+    font-size: 20px;
+    color: #20B2AA;
+}
+
+.assignment-links li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.P {
+    text-align: center;
+    background: teal;
+    color: ghostwhite;
+}
+
+#projects-wrap {
+    border: 6px solid black;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    padding-bottom: 15px;
+    margin-bottom: 100px;
+}
+
+
+/*------------------------*/
+
+
+/*Services page*/
+
+
+/*#serviceMsg {
+    text-align: center;
+    font-size: 100px;
+    color: teal;
+}*/
+
+.section-1 {
+    background-color: grey;
+}
+
+.left,
+.center,
+.right h1 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.left,
+.center {
+    background-color: gray;
+    border: solid black 2px;
+    float: left;
+    width: 33.3%;
+    height: 300px;
+}
+
+.right {
+    background-color: grey;
+    border: solid black 2px;
+    float: right;
+    width: 33.4%;
+    height: 300px;
+}
+
+.left:hover,
+.center:hover,
+.right:hover {
+    background-color: teal;
+}
+
+
+/*------------------*/
+
+
+/*Contact page*/
+
+#contactPage {
+    margin: 0 auto;
+    padding: 2;
+    background-color: black;
+}
+
+#contact {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
+    max-width: 840px;
+}
+
+
+/* Left contact page */
+
+.form-horizontal {
+    /*float: left;*/
+    max-width: 350px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.form-control,
+textarea {
+    max-width: 350px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.send-button {
+    margin-top: 3px;
+    height: 34px;
+    width: 350px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+}
+
+.send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 18px 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+
+/* Begin Right Contact Page */
+
+.direct-contact-container {
+    max-width: 400px;
+}
+
+
+/* Location, Phone, Email Section */
+
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4.5;
+    color: ghostwhite;
+}
+
+.contact-text {
+    font: 350 25px 'Lato', sans-serif;
+    letter-spacing: 1.8px;
+    color: ghostwhite;
+}
+
+.place {
+    margin-left: 62px;
+}
+
+.phone {
+    margin-left: 56px;
+}
+
+.gmail {
+    margin-left: 53px;
+}
+
+.contact-text a {
+    color: ghostwhite;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    color: teal;
+    text-decoration: none;
+}
+
+
+/* Social Media Icons */
+
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+}
+
+.social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
+}
+
+.copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: grey;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, .6);
+}
+
+
+/* Begin Media Queries*/
+
+@media screen and (max-width: 850px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .direct-contact-container,
+    .form-horizontal {
+        margin: 0 auto;
+    }
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 300px;
+    }
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .left,
+    .center,
+    .right {
+        width: 100%;
+    }
+    #contactList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .direct-contact-container,
+    .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
+    .form-control,
+    textarea {
+        margin: 0 auto;
+    }
+    .name,
+    .email,
+    textarea {
+        width: 280px;
+    }
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 280px;
+    }
+    .social-media-list {
+        left: 0;
+    }
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+    .P {
+        width: 100%;
+    }
+    #homeMsg {
+        font-size: 120%;
+    }
+    #serviceMsg {
+        font-size: 250%;
+    }
+    #backgroundImage {
+        border-radius: 10px;
+        width: 100%;
+    }
+    #contactPage {
+        width: 100%;
+    }
+    .left,
+    .center,
+    .right {
+        width: 100%;
+    }
+    #contactList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
+    }
+    .P {
+        width: 100%;
+    }
+    #homeMsg {
+        font-size: 120%;
+    }
+    #serviceMsg {
+        font-size: 250%;
+    }
+    #backgroundImage {
+        border-radius: 10px;
+        width: 100%;
+    }
+    #contactPage {
+        width: 100%;
+    }
+    .left,
+    .center,
+    .right {
+        width: 100%;
+    }
+    #contactList {
+        width: 100%;
+    }
+}
+
+#copyright2 {
+    font-size: 15px;
+    color: grey;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+
+/*------------------------------------------------------------------------------*/
