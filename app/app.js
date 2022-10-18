@@ -31,6 +31,7 @@ import { MongoURI, Secret } from '../config/config.js';
 import indexRouter from './routes/index.route.server.js'
 import authRouter from './routes/auth.route.server.js';
 import businessRouter from './routes/business.route.server.js';
+import { DisplayBusinessEditPage } from './controllers/business.controller.server.js';
 // Instantiate Express Application
 const app = express();
 
@@ -53,7 +54,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname,'/client')));
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../Public')));
 
 
 // Auth Step 4 - Setup Express Session
@@ -81,5 +82,6 @@ passport.deserializeUser(User.deserializeUser());
 app.use('/', indexRouter);
 app.use('/', authRouter);
 app.use('/', businessRouter);
+
 
 export default app;

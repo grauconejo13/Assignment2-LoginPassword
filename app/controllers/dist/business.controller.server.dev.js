@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.DisplayBusinessList = DisplayBusinessList;
 exports.DisplayBusinessAddPage = DisplayBusinessAddPage;
 exports.ProcessBusinessAddPage = ProcessBusinessAddPage;
-exports.DisplayBusinessUpdatePage = DisplayBusinessUpdatePage;
-exports.ProcessBusinessUpdatePage = ProcessBusinessUpdatePage;
+exports.DisplayBusinessEditPage = DisplayBusinessEditPage;
+exports.ProcessBusinessEditPage = ProcessBusinessEditPage;
 exports.ProcessBusinessDelete = ProcessBusinessDelete;
 
 var _business = _interopRequireDefault(require("../models/business.js"));
@@ -34,7 +34,7 @@ function DisplayBusinessList(req, res, next) {
 
 function DisplayBusinessAddPage(req, res, next) {
   res.render('index', {
-    title: 'Add Name',
+    title: 'Add Contact',
     page: 'business/edit',
     contact: {},
     displayName: (0, _index.UserDisplayName)(req)
@@ -61,7 +61,7 @@ function ProcessBusinessAddPage(req, res, next) {
   });
 }
 
-function DisplayBusinessUpdatePage(req, res, next) {
+function DisplayBusinessEditPage(req, res, next) {
   var id = req.params.id;
 
   _business["default"].findById(id, function (err, Contact) {
@@ -71,7 +71,7 @@ function DisplayBusinessUpdatePage(req, res, next) {
     }
 
     res.render('index', {
-      title: 'Update Contact',
+      title: 'Edit Contact',
       page: 'business/edit',
       contact: Contact,
       displayName: (0, _index.UserDisplayName)(req)
@@ -79,7 +79,7 @@ function DisplayBusinessUpdatePage(req, res, next) {
   });
 }
 
-function ProcessBusinessUpdatePage(req, res, next) {
+function ProcessBusinessEditPage(req, res, next) {
   var id = req.params.id;
   var newContact = (0, _business["default"])({
     _id: req.body.id,

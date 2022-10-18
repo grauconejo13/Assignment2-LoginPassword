@@ -18,6 +18,7 @@ server.on('error', onError);
 server.on('listening', onListening);
 
 function normalizePort(val) {
+    'use strict';
     port = parseInt(val, 10);
     if (isNaN(port)) {
         return val;
@@ -31,6 +32,7 @@ function normalizePort(val) {
 }
 
 function onError(error) {
+    'use strict';
     if (error.syscall !== 'listen') {
         throw error;
     }
@@ -55,6 +57,7 @@ function onError(error) {
 }
 
 function onListening() {
+    'use strict';
     let addr = server.address();
     let bind = 'pipe ' + addr;
     debug('Listening on ' + bind);

@@ -4,8 +4,8 @@ import {
     DisplayBusinessList,
     DisplayBusinessAddPage,
     ProcessBusinessAddPage,
-    ProcessBusinessUpdatePage,
-    DisplayBusinessUpdatePage,
+    ProcessBusinessEditPage,
+    DisplayBusinessEditPage,
     ProcessBusinessDelete
 } from "../controllers/business.controller.server.js";
 
@@ -16,8 +16,8 @@ const router = Router();
 router.get('/business-list', DisplayBusinessList);
 router.get('/business-add', AuthGuard, DisplayBusinessAddPage);
 router.post('/business-add', AuthGuard, ProcessBusinessAddPage);
-router.get('/business-edit/:id', AuthGuard, DisplayBusinessUpdatePage);
-router.post('/business-edit/:id', AuthGuard, ProcessBusinessUpdatePage);
+router.get('/business-edit/:id', AuthGuard, DisplayBusinessEditPage);
+router.post('/business-edit/:id', AuthGuard, ProcessBusinessEditPage);
 router.get('/business-delete/:id', AuthGuard, ProcessBusinessDelete);
 
 export default router;

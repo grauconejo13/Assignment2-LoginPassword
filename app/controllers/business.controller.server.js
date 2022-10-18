@@ -3,6 +3,7 @@ import businessModel from '../models/business.js';
 import { UserDisplayName } from '../utils/index.js';
 
 export function DisplayBusinessList(req, res, next) {
+
     businessModel.find(function(err, Contact) {
         if (err) {
             console.error(err);
@@ -14,7 +15,7 @@ export function DisplayBusinessList(req, res, next) {
 }
 
 export function DisplayBusinessAddPage(req, res, next) {
-    res.render('index', { title: 'Add Name', page: 'business/edit', contact: {}, displayName: UserDisplayName(req) });
+    res.render('index', { title: 'Add Contact', page: 'business/edit', contact: {}, displayName: UserDisplayName(req) });
 }
 
 export function ProcessBusinessAddPage(req, res, next) {
@@ -37,7 +38,7 @@ export function ProcessBusinessAddPage(req, res, next) {
     })
 }
 
-export function DisplayBusinessUpdatePage(req, res, next) {
+export function DisplayBusinessEditPage(req, res, next) {
     let id = req.params.id;
 
     businessModel.findById(id, (err, Contact) => {
@@ -46,11 +47,11 @@ export function DisplayBusinessUpdatePage(req, res, next) {
             res.end(err);
         }
 
-        res.render('index', { title: 'Update Contact', page: 'business/edit', contact: Contact, displayName: UserDisplayName(req) });
+        res.render('index', { title: 'Edit Contact', page: 'business/edit', contact: Contact, displayName: UserDisplayName(req) });
     });
 }
 
-export function ProcessBusinessUpdatePage(req, res, next) {
+export function ProcessBusinessEditPage(req, res, next) {
 
     let id = req.params.id;
 

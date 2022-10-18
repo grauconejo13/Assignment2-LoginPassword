@@ -32,6 +32,47 @@ body {
 
 /*------------------------------*/
 
+
+/*Login + Register*/
+
+.form-group input {
+    font-size: 20px;
+    padding: 1px;
+}
+
+#loginForm,
+#registerForm {
+    width: 300px;
+    float: center;
+}
+
+.lead,
+.hint-text {
+    font-weight: bolder;
+}
+
+.discreteQuestion {
+    color: darkgrey;
+    font-size: 21px;
+    float: center;
+}
+
+.discreteQuestion a {
+    color: brown;
+    font-size: 21px;
+    float: center;
+}
+
+button {
+    float: center;
+}
+
+
+/*------------------------------*/
+
+
+/*Buttons*/
+
 #addBtn {
     border: solid black 1px;
     padding: 5px;
@@ -42,37 +83,42 @@ body {
     background-color: teal;
 }
 
-#submit {
-    border: solid black 2px;
-    background-color: brown;
-}
-
-#updateBtn,
+#editBtn,
 #deleteBtn {
     font-size: 12px;
+    font-weight: bold;
 }
 
-#updateBtn:hover,
-#deleteBtn:hover {
+#editBtn:hover {
     background-color: teal;
+}
+
+#deleteBtn:hover {
+    background-color: red;
 }
 
 #loginBtn,
 #submitBtn,
 #cancelBtn {
     border: solid black 2px;
+    font-size: 18px;
 }
 
 #submit:hover,
 #loginButton:hover,
-#submitBtn:hover,
-#cancelBtn:hover {
+#submitBtn:hover {
     border: solid black 2px;
     background-color: teal;
 }
 
+#cancelBtn:hover {
+    border: solid black 2px;
+    background-color: red;
+}
+
 #contactList {
     width: 100%;
+    border: black solid 2px;
 }
 
 
@@ -80,6 +126,7 @@ body {
 
 #highlight {
     color: hotpink;
+    font-weight: bolder;
 }
 
 .leftSide {
@@ -139,6 +186,7 @@ body {
     background-color: ghostwhite;
     padding-bottom: 15px;
     margin-bottom: 100px;
+    width: 700px;
 }
 
 
@@ -202,9 +250,15 @@ body {
     background-color: black;
 }
 
+#submit {
+    border: solid black 2px;
+    background-color: ghostwhite;
+}
+
 #contact {
+    margin-left: -10px;
     width: 100%;
-    height: 100%;
+    float: left;
 }
 
 .contact-wrapper {
