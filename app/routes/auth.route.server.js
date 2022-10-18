@@ -1,9 +1,11 @@
-import {Router} from 'express';
-import { DisplayLoginPage, 
-    DisplayRegisterPage, 
+import { Router } from 'express';
+import {
+    DisplayLoginPage,
+    DisplayRegisterPage,
     ProcessLoginPage,
     ProcessLogoutPage,
-    ProcessRegisterPage} from '../controllers/auth.controller.server.js';
+    ProcessRegisterPage
+} from '../controllers/auth.controller.server.js';
 
 const router = Router();
 

@@ -105,7 +105,7 @@ button {
 }
 
 #submit:hover,
-#loginButton:hover,
+#loginBtn:hover,
 #submitBtn:hover {
     border: solid black 2px;
     background-color: teal;
@@ -186,21 +186,11 @@ button {
     background-color: ghostwhite;
     padding-bottom: 15px;
     margin-bottom: 100px;
-    width: 700px;
+    width: 100%;
 }
 
 
 /*------------------------*/
-
-
-/*Services page*/
-
-
-/*#serviceMsg {
-    text-align: center;
-    font-size: 100px;
-    color: teal;
-}*/
 
 .section-1 {
     background-color: grey;
@@ -435,6 +425,21 @@ hr {
     border-color: rgba(255, 255, 255, .6);
 }
 
+#copyright2 {
+    font-size: 15px;
+    color: grey;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+
+/*---------------------------------------------*/
+
+
+/*---------------------------------------------*/
+
 
 /* Begin Media Queries*/
 
@@ -528,6 +533,35 @@ hr {
     #contactList {
         width: 100%;
     }
+    .leftSide,
+    .rightSide {
+        width: 100%;
+    }
+    .rightSide {
+        margin-bottom: 75px;
+    }
+    .projects-wrap {
+        width: 100%
+    }
+    .direct-contact-container {
+        margin: 0 auto;
+        ;
+        font-size: 1.5em;
+    }
+    .contactList {
+        width: 100%
+    }
+    .direct-contact-container {
+        display: block;
+        float: left;
+    }
+    .contact-list li {
+        display: block;
+        font-size: 2px;
+    }
+    .contact-list i {
+        float: left;
+    }
 }
 
 @media screen and (max-width: 410px) {
@@ -558,15 +592,10 @@ hr {
     #contactList {
         width: 100%;
     }
-}
-
-#copyright2 {
-    font-size: 15px;
-    color: grey;
-}
-
-.container {
-    margin-top: 20px;
+    .contact-list li {
+        display: block;
+        font-size: 2px;
+    }
 }
 
 
