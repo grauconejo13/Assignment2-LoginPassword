@@ -4,13 +4,13 @@ import { UserDisplayName } from '../utils/index.js';
 
 export function DisplayBusinessList(req, res, next) {
 
-    businessModel.find(function(err, Contact) {
+    businessModel.find(function(err, contactCollection) {
         if (err) {
             console.error(err);
             res.end(err);
         }
 
-        res.render('index', { title: 'Business Contact List', page: 'business/list', contact: Contact, displayName: UserDisplayName(req) });
+        res.render('index', { title: 'Business Contact List', page: 'business/list', contact: contactCollection, displayName: UserDisplayName(req) });
     })
 }
 
