@@ -1,11 +1,17 @@
 {
     "name": "comp229-401-a2",
     "version": "0.0.1",
+<<<<<<< HEAD
     "description": "Assignment #2 - Authentication",
     "main": "server.js",
     "engines": {
         "node": "v16.17.0"
     },
+=======
+    "description": "Assignment #2",
+    "main": "server.js",
+    "engines": { "node": "v16.17.0" },
+>>>>>>> bdc8f61c424c00d3e46391a8d6031da672bb65e6
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
