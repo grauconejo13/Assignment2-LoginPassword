@@ -1,8 +1,9 @@
 {
-    "name": "comp229-401-a1",
+    "name": "comp229-401-a2",
     "version": "0.0.1",
-    "description": "Assignment #1",
+    "description": "Assignment #2",
     "main": "server.js",
+    "engines": { "node": "v16.17.0" },
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
