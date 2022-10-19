@@ -2,7 +2,7 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import session from 'cookie-session';
+import session from 'express-session';
 
 // ES Modules fix for __dirname
 import path, { dirname } from 'path';
