@@ -311,6 +311,7 @@ textarea {
 
 .direct-contact-container {
     max-width: 400px;
+    word-wrap: break-word;
 }
 
 
@@ -444,6 +445,9 @@ hr {
 /* Begin Media Queries*/
 
 @media screen and (max-width: 850px) {
+    .container {
+        width: 100%;
+    }
     .contact-wrapper {
         display: flex;
         flex-direction: column;
@@ -469,9 +473,6 @@ hr {
     .left,
     .center,
     .right {
-        width: 100%;
-    }
-    #contactList {
         width: 100%;
     }
 }
@@ -543,28 +544,20 @@ hr {
     .projects-wrap {
         width: 100%
     }
-    .direct-contact-container {
-        margin: 0 auto;
-        ;
-        font-size: 1.5em;
+    #location,
+    #phoneNum,
+    #emailAdd {
+        font-size: 15px;
     }
-    .contactList {
-        width: 100%
-    }
-    .direct-contact-container {
-        display: block;
-        float: left;
-    }
-    .contact-list li {
-        display: block;
-        font-size: 2px;
-    }
-    .contact-list i {
-        float: left;
+    .container {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 410px) {
+    .container {
+        width: 100%;
+    }
     .send-button {
         width: 99%;
     }
@@ -588,13 +581,6 @@ hr {
     .center,
     .right {
         width: 100%;
-    }
-    #contactList {
-        width: 100%;
-    }
-    .contact-list li {
-        display: block;
-        font-size: 2px;
     }
 }
 
