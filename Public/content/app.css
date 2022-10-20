@@ -469,6 +469,10 @@ th {
     text-align: left;
 }
 
+#tableView {
+    overflow: auto;
+}
+
 
 /*---------------------------------------------*/
 
@@ -507,6 +511,9 @@ th {
         width: 100%;
     }
     /*-------------*/
+    #tableView {
+        width: 100%;
+    }
     /* Force table to not be like tables anymore */
     table,
     thead,
