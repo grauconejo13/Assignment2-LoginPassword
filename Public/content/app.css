@@ -3,6 +3,11 @@
 
 /*COMP229-401 - Assignment #1*/
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .container {
     margin-bottom: 50px;
     overflow: auto;
@@ -13,6 +18,13 @@ body {
     /*background-color: whitesmoke;*/
     background-image: linear-gradient(to right, darkgoldenrod 0%, saddlebrown 100%);
     overflow: scroll;
+}
+
+header a {
+    display: inline-block;
+    align-items: center;
+    height: 50px;
+    font-size: 25px;
 }
 
 #homeMsg {
